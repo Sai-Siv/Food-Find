@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Buttons</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+             /* Set background color */
+          }
+          header {
+            background-color: white; /* Set header background to white */
+            color: black; /* Set text color to black */
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed; /* Make the header fixed */
+            top: 0; /* Stick it to the top of the viewport */
+            width: 100%; /* Make it span the full width */
+            z-index: 999; /* Ensure it stays above other content */
+            box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+          }
+          header img {
+            height: 70px; /* Increase logo size */
+            margin-left: 20px;
+          }
+          nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+          }
+          nav ul li {
+            margin-right: 50px;
+          }
+          nav ul li:last-child {
+            /* Add margin to the last child of the list */
+            margin-right: 40px;
+          }
+          nav ul li a {
+            color: black; /* Set menu item text color to black */
+            text-decoration: none;
+            font-size: 20px;
+            
+    
+          }
+          nav ul li a:hover {
+            text-decoration: underline;
+            color: red; /* Underline the link on hover */
+          }
+          .login-signup {
+            border: 2px solid red;
+            padding: 5px 10px;
+            border-radius: 5px;
+            color: black; /* Set login/signup text color to black */
+            transition: color 0.3s; /* Add transition for smoother color change */
+          }
+          .login-signup:hover {
+            color: red; /* Change color to red on hover */
+          }
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f3f3f3;
+      }
+
+      .button-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .button-container .button {
+        padding: 15px 30px;
+        border: 2px solid red;
+        border-radius: 5px;
+        color: black;
+        text-decoration: none;
+        transition: all 0.3s ease;
+      }
+
+      .button-container .button:hover {
+        color: white;
+        background-color: red;
+      }
+
+      .button-container .button:first-child {
+        margin-right: 20px;
+      }
+      .footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="rectangle-20.png" alt="Logo" />
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="signin_swift.html" class="login-signup">Login</a></li>
+          <li><a href="signup_swift.html" class="login-signup">Sign Up</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="button-container">
+        <a href="signup.php" class="button">Vendor Login</a>
+        <a href="admin/signup.php" class="button">Donor Login</a>
+      </div>
+    <div class="footer">
+      <p>All rights reserved &copy; 2024</p>
+    </div>
+  </body>
+</html>

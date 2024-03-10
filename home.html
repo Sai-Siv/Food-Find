@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+             /* Set background color */
+          }
+          header {
+            background-color: white; /* Set header background to white */
+            color: black; /* Set text color to black */
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed; /* Make the header fixed */
+            top: 0; /* Stick it to the top of the viewport */
+            width: 100%; /* Make it span the full width */
+            z-index: 999; /* Ensure it stays above other content */
+            box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+          }
+          header img {
+            height: 70px; /* Increase logo size */
+            margin-left: 20px;
+          }
+          nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+          }
+          nav ul li {
+            margin-right: 50px;
+          }
+          nav ul li:last-child {
+            /* Add margin to the last child of the list */
+            margin-right: 40px;
+          }
+          nav ul li a {
+            color: black; /* Set menu item text color to black */
+            text-decoration: none;
+            font-size: 20px;
+            
+    
+          }
+          nav ul li a:hover {
+            text-decoration: underline;
+            color: red; /* Underline the link on hover */
+          }
+          .login-signup {
+            border: 2px solid red;
+            padding: 5px 10px;
+            border-radius: 5px;
+            color: black; /* Set login/signup text color to black */
+            transition: color 0.3s; /* Add transition for smoother color change */
+          }
+          .login-signup:hover {
+            color: red; /* Change color to red on hover */
+          }
+          .content {
+            position: relative; /* Set position to relative */
+            text-align: center;
+            margin-top: 90px; /* Adjust content margin to account for the fixed header */
+          }
+          .content img {
+            display: block;
+            margin: 40px auto 0; /* Add top padding to the image and center it horizontally */
+            max-width: 100%; /* Ensure the image doesn't overflow its container */
+            border-radius: 25px; /* Apply rounded corners to the edges of the image */
+            width: 90%; /* Increase image size to 90% of its container */
+          }
+          .content .caption {
+            position: absolute; /* Set position to absolute */
+            bottom: 60px; /* Adjust bottom distance */
+            left: 50%; /* Set to the middle */
+            transform: translateX(-50%); /* Center horizontally */
+            text-align: center;
+            color: white;
+            margin-bottom: 10px;
+          }
+          .content .caption p:first-child {
+            font-size: 45px; /* Increase font size */ /* Change text color to red */
+          }
+          .content .caption p:last-child {
+            font-size: 20px; /* Change font size */
+          }
+          .content .donate {
+            position: absolute; /* Set position to absolute */
+            bottom: 30px; /* Adjust bottom distance */
+            left: 50%; /* Set to the middle */
+            transform: translateX(-50%); /* Center horizontally */
+            text-align: center;
+            margin-top: 10px; /* Reduce top margin */
+            background-color: rgb(192, 38, 38); /* Set background color to red */
+            padding: 10px 20px; /* Add padding */
+            border-radius: 15px; /* Add border radius */
+          }
+          .content .donate a {
+            color: white; /* Set text color to white */
+            text-decoration: none;
+          }
+          .container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px; /* Add top margin */
+            height: 100px; /* Increase container height */
+          }
+          .box {
+            width: 40%; /* Set width */
+            background-color: #ffffff; /* Set background color */
+            border: 2px solid black; /* Add border */
+            padding: 20px; /* Add padding */
+            box-sizing: border-box; /* Include padding in width */
+            border-radius: 20px;
+            margin-left: 10px; /* Adjust margin */
+            margin-right: 10px; /* Adjust margin */
+          }
+          .why-choose {
+            margin-top: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            margin-left: -10px;
+          }
+          .choose-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+          }
+          .choose-box {
+            width: 19%;
+            background-color: #ffffff;
+            padding: 20px;
+            box-sizing: border-box;
+          }
+          .container .box {
+            margin-left: 60px;
+            margin-right: 60px;
+            margin-bottom: 20px;
+          }
+          span {
+            color: rgb(225, 35, 35);
+          }
+          .saying {
+            margin-top: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            margin-left: -10px;
+          }
+          .choose-container1 {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+          }
+          .choose-box1 {
+            width: 18%;
+            background-color: #ffffff;
+            border: 2px solid rgb(226, 11, 11);
+            padding: 20px;
+            box-sizing: border-box;
+            margin-bottom: 150px;
+          }
+        /* Your CSS styles */
+    </style>
+</head>
+<body>
+    <header>
+        <img src="rectangle-20.png" alt="Logo" />
+        <nav>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="graph.php">Graphs</a></li>
+            <li><a href="profile.php">Profile</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content" style="padding-top: 10px">
+            <!-- Your image goes here -->
+            <img src="Street-Children-1024x536-modified.jpg" alt="Image" />
+            <div class="caption">
+              <p>
+                <b>Feeding The <span>Hunger</span></b>
+              </p>
+              <p>We Serve The Food To Near By People</p>
+            </div>
+            <div class="donate">
+              <a href="fooddonateform.php">Donate Food</a>
+            </div>
+    </div>
+
+    <div class="container">
+        <div class="box">
+            <h2>The Problem of Food Waste</h2>
+        </div>
+        <div class="box">
+            <h2>Food Waste in Schools</h2>
+        </div>
+    </div>
+
+    <div style="margin-left: 60px; margin-right: 60px">
+        <p style="margin-top: 30px">Why us _____</p>
+        <div class="why-choose"><span>Why Choose</span> FoodFind?</div>
+        <div class="choose-container">
+            <div class="choose-box">
+                <p style="text-align: center"><b>ChatBot Integrated</b></p>
+            </div>
+            <div class="choose-box">
+                <p style="text-align: center"><b>Analytics</b></p>
+            </div>
+            <div class="choose-box">
+                <p style="text-align: center"><b>Feedback Form</b></p>
+            </div>
+            <div class="choose-box">
+                <p style="text-align: center"><b>Multi Language Support</b></p>
+            </div>
+        </div>
+        <p style="margin-top: 50px">Testimonials _____</p>
+        <div class="saying">What they're <span>Saying</span> about us</div>
+        <div class="choose-container1">
+            <div class="choose-box1">
+                <p style="text-align: center"><b>ChatBot Integrated</b></p>
+            </div>
+            <div class="choose-box1">
+                <p style="text-align: center"><b>Analytics</b></p>
+            </div>
+            <div class="choose-box1">
+                <p style="text-align: center"><b>Feedback Form</b></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

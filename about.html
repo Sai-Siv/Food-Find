@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+         /* Set background color */
+      }
+      header {
+        background-color: white; /* Set header background to white */
+        color: black; /* Set text color to black */
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed; /* Make the header fixed */
+        top: 0; /* Stick it to the top of the viewport */
+        width: 100%; /* Make it span the full width */
+        z-index: 999; /* Ensure it stays above other content */
+        box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+      }
+      header img {
+        height: 70px; /* Increase logo size */
+        margin-left: 20px;
+      }
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+      }
+      nav ul li {
+        margin-right: 50px;
+      }
+      nav ul li:last-child {
+        /* Add margin to the last child of the list */
+        margin-right: 40px;
+      }
+      nav ul li a {
+        color: black; /* Set menu item text color to black */
+        text-decoration: none;
+        font-size: 20px;
+        
+
+      }
+      nav ul li a:hover {
+        text-decoration: underline;
+        color: red; /* Underline the link on hover */
+      }
+      .login-signup {
+        border: 2px solid red;
+        padding: 5px 10px;
+        border-radius: 5px;
+        color: black; /* Set login/signup text color to black */
+        transition: color 0.3s; /* Add transition for smoother color change */
+      }
+      .login-signup:hover {
+        color: red; /* Change color to red on hover */
+      }
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      .about-heading {
+        color: red;
+        font-weight: bold;
+        margin-top: 40px;
+        margin-bottom:  20px; /* Add space below the heading */
+        font-size: 40px; /* Increase font size */
+        margin-left: 30px;
+      }
+      .about-heading .black {
+        color: black;
+      }
+      .content {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .photo {
+        width: 50%;
+        height: auto;
+        margin-right: 50px;
+        margin-left: 20px;
+      }
+      .photo img {
+        width: 100%;
+      }
+      .description {
+        width: 40%;
+        margin-top: 10px;
+        padding: 20px;
+        text-align: justify; /* Added text justification */
+      }
+      @media (max-width: 768px) {
+        .photo,
+        .description {
+          width: 100%;
+          margin-right: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="rectangle-20.png" alt="Logo" />
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="graph.php">Graphs</a></li>
+          <li><a href="profile.php">Profile</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="signin_swift.html" class="login-signup">Login</a></li>
+          <li><a href="signup_swift.html" class="login-signup">Sign Up</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="about-heading" style="padding-top: 100px; padding-bottom: 20px">
+      About <span class="black">Us</span>
+    </div>
+    <div class="content">
+      <div class="photo">
+        <img src="images.jpeg" alt="Company Photo" />
+      </div>
+      <div class="description">
+        <p style="text-align: justify">
+          <b>Food Find</b> is driven by a desire to create a more equitable and
+          sustainable food system. We see a troubling disconnect: on one hand,
+          restaurants grapple with expiring food nearing its sell-by date,
+          perfectly good to eat but destined for the landfill. On the other
+          hand, many individuals and families struggle with food insecurity.
+          Food Find steps in as a bridge, connecting these two realities. We
+          partner with restaurants to collect their surplus food – meals,
+          produce, and dairy products – that would otherwise go to waste.
+        </p>
+        <p style="text-align: justify">
+          This food is carefully inspected, packaged, and delivered to a network
+          of charitable organizations, including food banks, shelters, and
+          community kitchens. Through these partnerships, Food Find ensures that
+          nutritious, delicious meals reach those who need them most. By
+          rescuing food and diverting it from landfills, we contribute to a more
+          responsible food system and nourish our communities, one delicious
+          bite at a time.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
